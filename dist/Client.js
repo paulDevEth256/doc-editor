@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Document_1 = require("./Document");
+const FileStorage_1 = require("./FileStorage");
+const DocumentEditor_1 = require("./DocumentEditor");
+const document = new Document_1.Document();
+const storage = new FileStorage_1.FileStorage();
+const editor = new DocumentEditor_1.DocumentEditor(document, storage);
+editor.addText("Hello, world!");
+editor.addNewLine();
+editor.addText("This is a real-world document editor example.");
+editor.addNewLine();
+editor.addTabSpace();
+editor.addText("Indented text after a tab space.");
+editor.addNewLine();
+editor.addImage("picture.jpg");
+console.log(editor.renderDocument());
+editor.saveDocument();
