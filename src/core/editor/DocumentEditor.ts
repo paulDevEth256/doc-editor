@@ -1,9 +1,9 @@
 import { Document } from "./Document";
-import { Persistence } from "./Persistence";
-import { TextElement } from "./TextElement";
-import { ImageElement } from "./ImageElement";
-import { NewLineElement } from "./NewLineElement";
-import { TabSpaceElement } from "./TabSpaceElement";
+import { Persistence } from "./infrastructure/persistance/Persistence";
+import { TextElement } from "./core/elements/TextElement";
+import { ImageElement } from "./core/elements/ImageElement";
+import { NewLineElement } from "./core/elements/NewLineElement";
+import { TabSpaceElement } from "./core/elements/TabSpaceElement";
 
 export class DocumentEditor {
   private renderedDocument = "";

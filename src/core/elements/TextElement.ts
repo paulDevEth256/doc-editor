@@ -1,4 +1,4 @@
-import { DocumentElement } from "./DocumentElement";
+import { DocumentElement } from "../DocumentElement";
 
 export class TextElement extends DocumentElement {
   constructor(private text: string) {
